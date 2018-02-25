@@ -125,6 +125,12 @@ class TwitterUser(models.Model):
         following_users = TwitterUser.objects.filter(pk__in=following_pk_list)
         return following_users
 
+    def follow(self, to_user):
+        self.relations_by_from_user.create(
+            to_user=to_user,
+            type=Relation.RELATION_TYPE_FOLLOWING,
+        )
+
 
 class Relation(models.Model):
     RELATION_TYPE_FOLLOWING = 'f'

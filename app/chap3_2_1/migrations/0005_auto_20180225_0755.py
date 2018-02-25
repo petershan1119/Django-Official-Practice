@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('chap3', '0004_auto_20180225_0734'),
+        ('chap3_2_1', '0004_auto_20180225_0734'),
     ]
 
     operations = [
@@ -17,11 +17,11 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='food',
             name='persona',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='chap3.PersonA'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='chap3_2_1.PersonA'),
         ),
         migrations.AlterField(
             model_name='fruit',
             name='persona',
-            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='chap3.PersonA'),
+            field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='chap3_2_1.PersonA'),
         ),
     ]

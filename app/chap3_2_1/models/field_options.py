@@ -8,7 +8,7 @@ __all__ = (
 
 class Person(models.Model):
     """
-
+    3.2.1.3.2 Field options에서 choices 관련 (p.86-87)
     """
     SHIRT_SIZES = (
         ('S', 'Small'),

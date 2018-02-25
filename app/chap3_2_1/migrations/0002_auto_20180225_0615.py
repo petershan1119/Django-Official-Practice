@@ -8,7 +8,7 @@ import django.utils.timezone
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('chap3', '0001_initial'),
+        ('chap3_2_1', '0001_initial'),
     ]
 
     operations = [
@@ -42,10 +42,10 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Restaurant',
             fields=[
-                ('place_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='chap3.Place')),
+                ('place_ptr', models.OneToOneField(auto_created=True, on_delete=django.db.models.deletion.CASCADE, parent_link=True, primary_key=True, serialize=False, to='chap3_2_1.Place')),
                 ('serves_hot_dog', models.BooleanField(default=False)),
                 ('serves_pizza', models.BooleanField(default=False)),
             ],
-            bases=('chap3.place',),
+            bases=('chap3_2_1.place',),
         ),
     ]

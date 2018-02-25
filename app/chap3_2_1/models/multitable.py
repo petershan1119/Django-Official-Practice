@@ -8,6 +8,8 @@ __all__ = (
 
 class Other(models.Model):
     """
+    3.2.1.7.2. Multi-table inheritance (p.98-100)
+
     o = Other.objects.create()
     p1 = Place.objects.create(name='제노', address='신사역')
     r1 = Restaurant.objects.create(name='맥도날드', address='신사역')

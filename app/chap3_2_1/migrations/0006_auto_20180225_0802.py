@@ -7,7 +7,7 @@ import django.db.models.deletion
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('chap3', '0005_auto_20180225_0755'),
+        ('chap3_2_1', '0005_auto_20180225_0755'),
     ]
 
     operations = [
@@ -20,6 +20,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='place',
             name='other',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='places', related_query_name='place', to='chap3.Other'),
+            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, related_name='places', related_query_name='place', to='chap3_2_1.Other'),
         ),
     ]

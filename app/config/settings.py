@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'chap3.apps.Chap3Config',
+    'chap3_2_1.apps.Chap321Config',
 
     'django_extensions',
 ]

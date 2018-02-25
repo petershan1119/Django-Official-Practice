@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('chap3', '0006_auto_20180225_0802'),
+        ('chap3_2_1', '0006_auto_20180225_0802'),
     ]
 
     operations = [
         migrations.AddField(
             model_name='restaurant',
             name='nearby_places',
-            field=models.ManyToManyField(related_query_name='near_restaurant', to='chap3.Place'),
+            field=models.ManyToManyField(related_query_name='near_restaurant', to='chap3_2_1.Place'),
         ),
     ]

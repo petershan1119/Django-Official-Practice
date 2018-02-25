@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'chap3_2_1.apps.Chap321Config',
+    'chap3_2_2.apps.Chap322Config',
 
     'django_extensions',
 ]

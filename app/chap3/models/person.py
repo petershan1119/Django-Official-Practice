@@ -7,9 +7,23 @@ __all__ = (
 
 
 class Person(models.Model):
+    """
+
+    """
+    SHIRT_SIZES = (
+        ('S', 'Small'),
+        ('M', 'Medium'),
+        ('L', 'Large'),
+    )
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
     birth_date = models.DateField()
+    # p = Person(first_name='Sangwon', last_name='Han', birth_date=date(1981, 11, 17), shirt_size='L')
+    # p.save()
+    # p.shirt_size
+    # p.get_shirt_size_display()
+    shift_size = models.CharField(max_length=1, choices=SHIRT_SIZES)
+
 
     def baby_boomer_status(self):
         if self.birth_date < datetime.date(1945, 8, 1):

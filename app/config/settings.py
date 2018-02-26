@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'chap3_2_1.apps.Chap321Config',
     'chap3_2_2.apps.Chap322Config',
+    'proxy.apps.ProxyConfig',
 
     'django_extensions',
 ]
